@@ -6,13 +6,13 @@ import static org.junit.Assert.*;
 public class UserRegistrationTest {
     UserRegistration object=new UserRegistration();
     @Test
-    public void firstName_is_validThenTrue(){
-        boolean firstName=object.checkName("Name");
-        Assert.assertTrue(firstName);
+    public void name_is_validThenTrue(){
+        boolean Name=object.checkName("name");
+        Assert.assertTrue(Name);
     }
     @Test
-    public void firstName_is_invalidThenFalse(){
-        boolean firstName=object.checkName("name");
-        Assert.assertFalse(firstName);
+    public void name_is_invalidThenFalse(){
+        boolean Name=object.checkName("name");
+        Assert.assertFalse(Name);
     }
 }

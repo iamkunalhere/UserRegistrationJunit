@@ -7,7 +7,7 @@ public class UserRegistration {
     public static void main(String[] args) {
         System.out.println("Welcome to User Registration");
     }
-    public boolean checkName(String firstName) {
-        return Pattern.matches(patternForName,firstName);
+    public boolean checkName(String Name) {
+        return Pattern.matches(patternForName,Name);
     }
 }
