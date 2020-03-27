@@ -1,0 +1,6 @@
+*.class
+*.log
+*.ctxt
+*.idea
+*.iml
+/out/production/UserRegistration/META-INF/UserRegistration.kotlin_module
