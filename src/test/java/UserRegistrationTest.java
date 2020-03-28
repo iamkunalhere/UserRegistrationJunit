@@ -20,4 +20,14 @@ public class UserRegistrationTest {
         boolean Email=object.checkEmail("iamkunalhere@gmail.com");
         Assert.assertTrue(Email);
     }
+    @Test
+    public void MobileNumber_is_validThenTrue() {
+        boolean Number=object.checkMobileNumber("91 7276268363");
+        Assert.assertTrue(Number);
+    }
+    @Test
+    public void MobileNumber_is_invalidThenFalse() {
+        boolean Number=object.checkMobileNumber("1234567890");
+        Assert.assertFalse(Number);
+    }
 }
