@@ -32,7 +32,7 @@ public class UserRegistrationTest {
     }
     @Test
     public void password_is_validThenTrue() {
-        boolean Password=object.checkPassword("g44Ffhsj3242");
+        boolean Password=object.checkPassword("dshkaGSH215432");
         Assert.assertTrue(Password);
     }
     @Test
