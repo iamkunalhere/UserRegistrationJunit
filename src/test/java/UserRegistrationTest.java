@@ -31,13 +31,13 @@ public class UserRegistrationTest {
         Assert.assertFalse(Number);
     }
     @Test
-    public void passwordLength_is_validThenTrue() {
-        boolean Password=object.checkPasswordLength("sfhsj3242");
+    public void password_is_validThenTrue() {
+        boolean Password=object.checkPassword("g44Ffhsj3242");
         Assert.assertTrue(Password);
     }
     @Test
-    public void passwordLength_is_invalidThenFalse() {
-        boolean Password=object.checkPasswordLength("sf24");
+    public void password_is_invalidThenFalse() {
+        boolean Password=object.checkPassword("sf24");
         Assert.assertFalse(Password);
     }
 }
