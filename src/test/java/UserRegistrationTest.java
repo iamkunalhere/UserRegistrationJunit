@@ -21,13 +21,23 @@ public class UserRegistrationTest {
         Assert.assertTrue(Email);
     }
     @Test
-    public void MobileNumber_is_validThenTrue() {
+    public void mobileNumber_is_validThenTrue() {
         boolean Number=object.checkMobileNumber("91 7276268363");
         Assert.assertTrue(Number);
     }
     @Test
-    public void MobileNumber_is_invalidThenFalse() {
+    public void mobileNumber_is_invalidThenFalse() {
         boolean Number=object.checkMobileNumber("1234567890");
         Assert.assertFalse(Number);
+    }
+    @Test
+    public void passwordLength_is_validThenTrue() {
+        boolean Password=object.checkPasswordLength("sfhsj3242");
+        Assert.assertTrue(Password);
+    }
+    @Test
+    public void passwordLength_is_invalidThenFalse() {
+        boolean Password=object.checkPasswordLength("sf24");
+        Assert.assertFalse(Password);
     }
 }
